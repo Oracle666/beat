@@ -1,3 +1,196 @@
-.order{
-    background: grey;
+$inputheight: 58px;
+$formmargintop:11px;
+$inputclickmarginright:10px;
+$choiceitemmarginright:16px;
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    line-height: 1.18;
+    input{
+        width: 100%;
+        border-radius: 4px;
+        border: 3px solid transparent;
+        &:focus{
+            outline: none;
+            border: 3px solid #E01F3D ;
+        }
+    }
+    textarea{
+        border-radius: 4px;
+        border: 3px solid transparent;
+        &:focus{
+            outline: none;
+            border: 3px solid #E01F3D;
+        }
+    }
+    &__data{
+        width: 461px;
+    }
+    &__review{
+        width: 461px;
+    }
 }
+
+.form__namephone{
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    .form__name{
+        flex: 1;
+        margin-right: 17px;
+        .input__name{
+            height: $inputheight;
+        }
+    }
+    .form__phone{
+        flex: 1;
+        .input__phone{
+            height: $inputheight;
+        }
+    }
+}
+
+.form__address{
+    width: inherit;
+    &-street{
+        flex: 1;
+        margin-top: $formmargintop;
+        .input__address-street{
+            height: $inputheight;
+        }
+    }
+    &-housedata{
+        display: flex;
+        margin-top: $formmargintop;
+        flex-wrap: wrap;
+        &-item{
+            margin-right: 13px;
+            flex: 1;
+            &:last-child{
+                margin-right: 0px;
+            }
+            .input__address-housedata-item{
+                height: $inputheight;
+            }
+        }
+    }
+}
+
+
+.form__review{
+    input{
+        width: auto;
+    }
+    .form__textarea{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex: 1;
+        &-item{
+            height: 152px;
+        }
+    }
+}
+
+
+
+.form__choice{
+    margin-top: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+    &-item{
+        display: flex;
+        align-items: center;
+        margin-right: $choiceitemmarginright;
+        &:last-child{
+            margin-right: 0px;
+        }
+        &:nth-child(3){
+            margin-top: 19px;
+        }
+        .input__choice-item{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin-right: $inputclickmarginright;
+            display: none;
+            &:checked + .fake__radio::before{
+                opacity: 1;
+            }
+        }
+        .input__choice-item-checkbox{
+            width: 25px;
+            height: 25px;
+            margin-right: $inputclickmarginright;
+            display: none;
+            &:checked + .fake__checkbox::before{
+                opacity: 1;
+            } 
+        }
+
+        .fake__radio{
+            width: 24px;
+            height: 24px;
+            background: #FFFFFF;
+            border-radius: 50%;
+            margin-right: $inputclickmarginright;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: #E01F3D;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+            }
+        }
+        .fake__checkbox{
+            width: 24px;
+            height: 24px;
+            border-radius:4px;
+            background: #FFFFFF;
+            margin-right: $inputclickmarginright;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: url(../../img/vector.png) no-repeat center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+            }
+        }
+
+    }
+
+}
+
+.form__buttons{
+    margin-top: 46px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -9,3 +9,21 @@
     background:#E01F3D;
     color: #fff;
 }
+
+button{
+    border: none;
+}
+
+.form__buttons button{
+    padding: 21px 41px;
+    margin-right: 15px;
+}
+
+.form__buttons{
+    .button--reset{
+        padding: 0;
+        background: none;
+        font-family: playregular;
+        text-transform: none;
+    }
+}
