@@ -1,0 +1,36 @@
+.slide__content{
+    display: flex;
+    align-items:center;
+}
+
+.slide__item{
+    width: 18px;
+    height: 18px;
+    margin-bottom: 13px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+}
+
+.slide__link{
+    display: block;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    &-page{
+        width: 8px;
+        height: 8px;
+        background: #292929;
+        opacity: 0.6;
+        border-radius: 50%;
+    }
+    &:hover{
+        border:2px solid #E01F3D;
+        border-radius: 50%;
+        .slide__link-page{
+            background: #E01F3D;
+            opacity: 1;
+        }
+    }
+}

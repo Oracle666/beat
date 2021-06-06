@@ -1,0 +1,11 @@
+.contact{
+    display: flex;
+    align-items: center;
+    .contact__img{
+        width: 14px;
+        height: 14px;
+    }
+    .contact__phone{
+        margin-left: 6px;
+    }
+}
