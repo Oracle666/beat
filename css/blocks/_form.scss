@@ -9,7 +9,6 @@ $choiceitemmarginright:16px;
     color: #FFFFFF;
     line-height: 1.18;
     input{
-        width: 100%;
         border-radius: 4px;
         border: 3px solid transparent;
         &:focus{
@@ -27,74 +26,46 @@ $choiceitemmarginright:16px;
     }
     &__data{
         width: 461px;
-    }
-    &__review{
-        width: 461px;
-    }
-}
 
-.form__namephone{
-    width: inherit;
-    display: flex;
-    flex-wrap: wrap;
-    .form__name{
-        flex: 1;
-        margin-right: 17px;
-        .input__name{
-            height: $inputheight;
-        }
-    }
-    .form__phone{
-        flex: 1;
-        .input__phone{
-            height: $inputheight;
-        }
-    }
-}
-
-.form__address{
-    width: inherit;
-    &-street{
-        flex: 1;
-        margin-top: $formmargintop;
-        .input__address-street{
-            height: $inputheight;
-        }
-    }
-    &-housedata{
-        display: flex;
-        margin-top: $formmargintop;
-        flex-wrap: wrap;
-        &-item{
-            margin-right: 13px;
+        .form__textarea{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
             flex: 1;
-            &:last-child{
-                margin-right: 0px;
-            }
-            .input__address-housedata-item{
-                height: $inputheight;
+            &-item{
+                height: 152px;
             }
         }
     }
 }
 
-
-.form__review{
-    input{
-        width: auto;
-    }
-    .form__textarea{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        flex: 1;
-        &-item{
-            height: 152px;
-        }
+.form__row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+    :last-child{
+        margin-right: 0px;
     }
 }
 
-
+.input{
+    &__name{
+        width: 222px;
+        height: 58px;
+    }
+    &__phone{
+        width: 222px;
+        height: 58px;
+    }
+    &__address-street{
+        width: 461px;
+        height: 58px;
+    }
+    &__address-housedata-item{
+        width: 105px;
+        height: 58px;
+    }
+}
 
 .form__choice{
     margin-top: 38px;

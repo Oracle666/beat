@@ -123,7 +123,7 @@
   opacity: 1;
 }
 
-.button__hello {
+.hello__button {
   margin-top: 54px;
 }
 
@@ -301,10 +301,17 @@ button {
 .review__humans .review__list .review__item:last-child {
   margin-right: 0px;
 }
-.review__humans .review__list .review__item:active .review__human-img {
-  border: 4px solid #E01F3D;
+.review__humans .review__list .review__item .review__item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 3px solid transparent;
+  border-radius: 50%;
 }
-.review__humans .review__list .review__item .review__human-img {
+.review__humans .review__list .review__item .review__item-link :active {
+  border: 3px solid red;
+}
+.review__humans .review__list .review__item .review__item-img {
   width: 74px;
   height: 74px;
   border-radius: 50%;
@@ -338,7 +345,6 @@ button {
   line-height: 1.18;
 }
 .form input {
-  width: 100%;
   border-radius: 4px;
   border: 3px solid transparent;
 }
@@ -357,73 +363,7 @@ button {
 .form__data {
   width: 461px;
 }
-.form__review {
-  width: 461px;
-}
-
-.form__namephone {
-  width: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.form__namephone .form__name {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-right: 17px;
-}
-.form__namephone .form__name .input__name {
-  height: 58px;
-}
-.form__namephone .form__phone {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-.form__namephone .form__phone .input__phone {
-  height: 58px;
-}
-
-.form__address {
-  width: inherit;
-}
-.form__address-street {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-top: 11px;
-}
-.form__address-street .input__address-street {
-  height: 58px;
-}
-.form__address-housedata {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 11px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.form__address-housedata-item {
-  margin-right: 13px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-.form__address-housedata-item:last-child {
-  margin-right: 0px;
-}
-.form__address-housedata-item .input__address-housedata-item {
-  height: 58px;
-}
-
-.form__review input {
-  width: auto;
-}
-.form__review .form__textarea {
+.form__data .form__textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,8 +376,38 @@ button {
       -ms-flex: 1;
           flex: 1;
 }
-.form__review .form__textarea-item {
+.form__data .form__textarea-item {
   height: 152px;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 13px;
+}
+.form__row :last-child {
+  margin-right: 0px;
+}
+
+.input__name {
+  width: 222px;
+  height: 58px;
+}
+.input__phone {
+  width: 222px;
+  height: 58px;
+}
+.input__address-street {
+  width: 461px;
+  height: 58px;
+}
+.input__address-housedata-item {
+  width: 105px;
+  height: 58px;
 }
 
 .form__choice {

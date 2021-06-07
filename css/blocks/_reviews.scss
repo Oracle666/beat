@@ -50,14 +50,20 @@
         &:last-child{
             margin-right: 0px;
         }
-        &:active .review__human-img{
-            border: 4px solid #E01F3D;
-        }
-            .review__human-img{
+            .review__item-link{
+                display: flex;
+                border:3px solid transparent;
+                border-radius: 50%;
+                :active{
+                    border:3px solid red;
+                }
+            }
+            .review__item-img{
                 width: 74px;
                 height: 74px;
                 border-radius: 50%;
             }
+
         }
     }
 }
