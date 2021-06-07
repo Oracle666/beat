@@ -77,9 +77,9 @@
 }
 
 .slide__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: absolute;
+  left: 104%;
+  top: 18%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -389,7 +389,7 @@ button {
           justify-content: space-between;
   margin-bottom: 13px;
 }
-.form__row :last-child {
+.form__row:last-child {
   margin-right: 0px;
 }
 

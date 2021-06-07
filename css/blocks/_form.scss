@@ -43,7 +43,7 @@ $choiceitemmarginright:16px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 13px;
-    :last-child{
+    &:last-child{
         margin-right: 0px;
     }
 }
