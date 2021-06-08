@@ -94,12 +94,12 @@
   margin-bottom: 0px;
 }
 
-.slide__link {
+.slide-menu__link {
   display: block;
   height: 100%;
   position: relative;
 }
-.slide__link::before {
+.slide-menu__link::before {
   content: "";
   width: 8px;
   height: 8px;
@@ -112,11 +112,11 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-.slide__link--active {
+.slide-menu__link--active {
   border: 2px solid #E01F3D;
   border-radius: 50%;
 }
-.slide__link--active::before {
+.slide-menu__link--active::before {
   background: #E01F3D;
   opacity: 1;
 }
