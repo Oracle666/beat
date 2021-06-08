@@ -77,9 +77,9 @@
 }
 
 .slide-menu {
-  position: absolute;
-  left: 104%;
-  top: 18%;
+  position: fixed;
+  right: 16%;
+  top: 24%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -97,28 +97,26 @@
 .slide__link {
   display: block;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
 }
-.slide__link-page {
+.slide__link::before {
+  content: "";
   width: 8px;
   height: 8px;
   background: #292929;
-  opacity: 0.6;
+  position: absolute;
   border-radius: 50%;
+  opacity: 0.6;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
-.slide__link:hover {
+.slide__link--active {
   border: 2px solid #E01F3D;
   border-radius: 50%;
 }
-.slide__link:hover .slide__link-page {
+.slide__link--active::before {
   background: #E01F3D;
   opacity: 1;
 }
