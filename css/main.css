@@ -76,7 +76,7 @@
   left: 88%;
 }
 
-.slide__content {
+.slide-menu {
   position: absolute;
   left: 104%;
   top: 18%;
@@ -390,7 +390,7 @@ button {
   margin-bottom: 13px;
 }
 .form__row:last-child {
-  margin-right: 0px;
+  margin-bottom: 0px;
 }
 
 .input__name {
