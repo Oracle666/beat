@@ -194,7 +194,7 @@ button {
   width: 67px;
   height: 21px;
   content: "";
-  background: url(../../img/shape.png);
+  background: url(../img/shape.png);
   opacity: 1;
   position: absolute;
   top: 21%;
@@ -486,7 +486,7 @@ button {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: url(../../img/vector.png) no-repeat center;
+  background: url(../img/vector.png) no-repeat center;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
