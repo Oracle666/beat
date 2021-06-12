@@ -1,30 +1,30 @@
 .reviews{
-    padding-top: 68px;
-    padding-bottom: 63px;
+    padding-top: rem(68px);
+    padding-bottom: rem(63px);
 }
 
 .review__title{
     font-family: playbold;
-    font-size: 48px;
+    font-size: rem(48px);
     line-height: 1.08;
     text-transform: uppercase;
 }
 
 .review{
-    margin-top: 32px;
-    width: 940px;
+    margin-top: rem(32px);
     background: #F8FAF9;
     display: flex;
-    padding:42px 0px 42px 42px;
+    padding:rem(42px) rem(0px) rem(42px) rem(42px);
     &__content{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 32px 107px 21px 0px; 
-        margin-left: 38px;
+        padding: rem(32px) rem(107px) rem(21px) rem(0px); 
+        margin-left: rem(38px);
         .review__title{
             font-family: playbold;
-            font-size: 24px;
+            text-transform: none;
+            font-size: rem(24px);
             color: #292929;
             line-height: 1.16;
         }
@@ -33,8 +33,7 @@
             line-height: 1.18;
         }
         .review__name{
-            font-family: playbold;
-            font-size: 18px;
+            font-size: rem(18px);
             line-height: 1.16;
         }
         
@@ -42,28 +41,73 @@
 }
 
 .review__humans{
-    margin-top: 15px;
+    margin-top: rem(15px);
     .review__list{
         display: flex;
         .review__item{
-            margin-right: 6px;
+            margin-right: rem(6px);
         &:last-child{
-            margin-right: 0px;
+            margin-right: rem(0px);
         }
             .review__item-link{
                 display: flex;
-                border:3px solid transparent;
+                border:rem(3px) solid transparent;
                 border-radius: 50%;
                 :active{
-                    border:3px solid red;
+                    border:rem(3px) solid red;
                 }
             }
             .review__item-img{
-                width: 74px;
-                height: 74px;
+                width: rem(74px);
+                height: rem(74px);
                 border-radius: 50%;
             }
 
         }
+    }
+}
+
+.review{
+    @include tablets{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+}
+
+.review__img{
+    @include tablets{
+        width:rem(130px);
+        height: rem(130px);
+
+    }
+}
+
+.review__content{
+    @include tablets{
+        margin-left: 0;
+        padding-left: rem(24px);
+        padding-right: rem(24px);
+    }
+}
+
+.review__title{
+    @include tablets{
+        margin-bottom: rem(16px);
+        text-align: center;
+    }
+}
+
+.review__subtitle{
+    @include tablets{
+        margin-bottom: rem(16px);
+        text-align: center;
+    }
+}
+
+.review__name{
+    @include tablets{
+        text-align: center;
     }
 }

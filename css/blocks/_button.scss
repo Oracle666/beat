@@ -1,11 +1,11 @@
 .hello__button{
-    margin-top: 54px;
+    margin-top: rem(54px);
 }
 .button{
     font-family: playbold;
     text-transform: uppercase;
-    padding: 18px 41px;
-    border-radius: 100px;
+    padding: rem(18px) rem(41px);
+    border-radius: rem(100px);
     background:#E01F3D;
     color: #fff;
 }
@@ -15,8 +15,8 @@ button{
 }
 
 .form__buttons button{
-    padding: 21px 41px;
-    margin-right: 15px;
+    padding: rem(21px) rem(41px);
+    margin-right: rem(15px);
 }
 
 .form__buttons{

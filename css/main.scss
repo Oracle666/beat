@@ -1,7 +1,13 @@
+$containerWidth:940px;
+$baseFontSize:16px;
+$tablets:768px;
+$phones:480px;
+@import "./layout/media";
 @import "./layout/normalize.css";
-@import "./layout/base.css";
+@import "./layout/base";
 @import "./blocks/_header.scss";
 @import "./blocks/menu";
+@import "./blocks/hamburger.scss";
 @import "./blocks/_hello.scss";
 @import "./blocks/slide";
 @import "./blocks/_button.scss";
@@ -9,3 +15,5 @@
 @import "./blocks/_reviews.scss";
 @import "./blocks/order";
 @import "./blocks/form";
+@import "./blocks/map";
+@import "./blocks/footer";

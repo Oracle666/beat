@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/main.css">
     <title>Beats</title>
 </head>
@@ -39,10 +40,15 @@
                             </li>
                         </ul>
                     </nav>
-                    <addres class="contact">
-                        <img src="./img/phone.png" alt="" class="contact__img">
+                    <addres class="contact header__contant">
+                        <img src="./img/phone.svg" alt="" class="contact__img">
                         <a href="tel:+78009039090" class="contact__phone">8 800 903 90 90</a>
                     </addres>
+                    <a href="" class="hamburger">
+                        <span class="hamburger__plank"></span>
+                        <span class="hamburger__plank"></span>
+                        <span class="hamburger__plank"></span>
+                    </a>
                 </div>
             </header>
             <main class="main-content">
@@ -86,29 +92,35 @@
                                     <div class="why__picture">
                                         <img src="./img/feat1.png" alt="" class="why__img">
                                     </div>
-                                    <h5 class="why__item-title">40 часов работы</h5>
-                                    <div class="why__item-subtitle">Наушники Beats Solo3 могут работать 
+                                    <div class="why__item-desc">
+                                        <h5 class="why__item-title">40 часов работы</h5>
+                                        <div class="why__item-subtitle">Наушники Beats Solo3 могут работать 
                                         до 40 часов без подзарядки, чтобы вы 
                                         могли пользоваться ими каждый день.</div>
+                                    </div>
                                 </li>
                                 <li class="why__item">
                                     <div class="why__picture">
                                         <img src="./img/feat2.png" alt="" class="why__img">
                                     </div>
-                                    <h5 class="why__item-title">Фирменное звучание</h5>
-                                    <div class="why__item-subtitle">Фирменное звучание Beats в наушниках 
+                                    <div class="why__item-desc">
+                                        <h5 class="why__item-title">Фирменное звучание</h5>
+                                        <div class="why__item-subtitle">Фирменное звучание Beats в наушниках 
                                         с технологией Bluetooth класса 
                                         1 будет сопровождать вас повсюду — 
                                         куда бы вы ни отправились.</div>
+                                    </div>
                                 </li>
                                 <li class="why__item">
                                     <div class="why__picture">
                                         <img src="./img/feat3.png" alt="" class="why__img">
                                     </div>
-                                    <h5 class="why__item-title">Быстрая зарядка</h5>
-                                    <div class="why__item-subtitle">Благодаря технологии Fast Fuel 
+                                    <div class="why__item-desc">
+                                        <h5 class="why__item-title">Быстрая зарядка</h5>
+                                        <div class="why__item-subtitle">Благодаря технологии Fast Fuel 
                                         всего через 5 минут зарядки вы 
                                         сможете слушать музыку ещё 3 часа.</div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -156,7 +168,7 @@
                             <form action="" class="form">
                                 <div class="form__data">
                                     <div class="form__row">
-                                        <label class="form__label">
+                                        <label class="form__label form__label--margin">
                                             <div class="form__name-item">Имя</div>
                                             <input type="text" class="input__name">
                                         </label>
@@ -221,8 +233,41 @@
                         </div>
                     </div>
                 </section>
+                <section class="map">
+                    <div class="map-location"></div>
+                    <footer class="footer">
+                        <div class="container-footer">
+                            <address class="footer__info">
+                                <div class="footer__address">Москва, ул.Новый Арбат, д.31/12</div>
+                                <div class="contact">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="phone-svg">
+                                        <path d="M13.7455 13.0923C13.4909 13.5935 12.9818 13.8441 12.4727 14.0947C11.8364 14.4706 11.3273 14.5959 10.6909 14.5959C9.8 14.5959 8.90909 14.22 8.14545 13.9694C7.50909 13.7188 7 13.4682 6.36364 13.2176C4.58182 12.09 2.54545 10.0853 1.52727 8.45643C1.14545 7.82996 0.890909 7.32878 0.636364 6.70231C0.381818 5.82525 0 5.07349 0 4.07113C0 3.44466 0.127273 2.81819 0.509091 2.19172C0.763636 1.69054 1.01818 1.18936 1.52727 0.938771C1.90909 0.938771 2.54545 0.813477 2.92727 0.813477C3.05455 0.813477 3.05455 0.813477 3.18182 0.813477C3.43636 0.938771 3.56364 1.31465 3.69091 1.56524C3.94545 2.19172 4.32727 2.69289 4.58182 3.31936C4.83636 3.56995 5.09091 3.82054 5.09091 4.07113C5.09091 4.6976 3.30909 5.57466 3.30909 6.07584C3.30909 6.32643 3.56364 6.70231 3.69091 6.9529C4.70909 8.70702 5.98182 9.95997 7.76364 10.9623C8.01818 11.0876 8.4 11.3382 8.65455 11.3382C9.16364 11.3382 10.0545 9.58408 10.6909 9.58408C10.9455 9.58408 11.2 9.83467 11.4545 10.0853C11.9636 10.4611 12.6 10.7117 13.1091 11.0876C13.3636 11.2129 13.7455 11.3382 13.8727 11.5888C13.8727 11.7141 13.8727 11.7141 13.8727 11.8394C14 12.09 13.8727 12.7164 13.7455 13.0923Z"/>
+                                    </svg>
+                                    <a href="tel:+78009039090" class="contact__phone contact__phone--footer">8 800 903 90 90</a>
+                                </div>
+                            </address>
+                            <div class="social">
+                                <ul class="social__list">
+                                    <li class="social__item">
+                                        <a href="" class="social__link-vk"></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link-facebook"></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link-instagram"></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link-telegram"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                </section>
             </main>
         </div>
+        
     </div>
     <div class="slide-menu">
         <ul class="slide-menu__list">
