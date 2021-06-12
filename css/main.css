@@ -1,19 +1,19 @@
 @import "./layout/normalize.css";
 @font-face {
   font-family: playregular;
-  src: url(../../fonts/playregular.ttf);
+  src: url(../fonts/playregular.ttf);
 }
 @font-face {
   font-family: playbold;
-  src: url(../../fonts/playbold.ttf);
+  src: url(../fonts/playbold.ttf);
 }
 @font-face {
   font-family: alegreyasansbold;
-  src: url(../../fonts/alegreyasansbold.ttf);
+  src: url(../fonts/alegreyasansbold.ttf);
 }
 @font-face {
   font-family: alegreyasansregular;
-  src: url(../../fonts/alegreyasansregular.ttf);
+  src: url(../fonts/alegreyasansregular.ttf);
 }
 html {
   font-size: 16px;
@@ -1056,7 +1056,7 @@ button {
 }
 
 .map-location {
-  background: url(../../img/map.jpg) no-repeat;
+  background: url(../img/map.jpg) no-repeat;
   background-size: cover;
   width: 1100px;
   height: 652px;
