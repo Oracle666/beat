@@ -160,7 +160,7 @@ $choiceitemmarginright:rem(16px);
         align-items: center;
     }
 }
-
+/*768*/
 .input{
     &__name{
         @include tablets{
@@ -187,6 +187,13 @@ $choiceitemmarginright:rem(16px);
 .form__textarea-item{
     @include tablets{
         height: rem(82px) !important;
+    }
+}
+
+.form__data{
+    @include tablets{
+        margin-right: 0px;
+        margin-left: 0px;
     }
 }
 

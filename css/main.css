@@ -54,6 +54,10 @@ section {
           align-items: center;
 }
 
+footer {
+  height: 100vh;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -240,6 +244,9 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   display: none;
+  position: fixed;
+  top: 2.5%;
+  right: 3%;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -925,6 +932,7 @@ button {
   }
 }
 
+/*768*/
 @media screen and (max-width: 768px) {
   .input__name {
     height: 2.25rem;
@@ -949,6 +957,13 @@ button {
 @media screen and (max-width: 768px) {
   .form__textarea-item {
     height: 5.125rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form__data {
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 
