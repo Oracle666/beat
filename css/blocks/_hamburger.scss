@@ -19,3 +19,18 @@
     height: 4px;
     border-radius: 10px;
 }
+
+.closeButton{
+    display: none;
+}
+
+/*768*/
+
+.closeButton{
+    @include tablets{
+        top: 2.5%;
+        right: 3%;
+        position: fixed;
+        z-index: 10000;
+    }
+}
