@@ -263,6 +263,11 @@ header {
     margin-top: 8.4375rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .menu__list .menu__item {
+    margin-right: 0px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .menu__link {

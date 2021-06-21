@@ -24,7 +24,6 @@
         right: 0;
         height: 100vh;
         z-index: 10000;
-
     }
 }
 
@@ -38,7 +37,14 @@
         justify-content: flex-start;
         margin-top: rem(135px);
     }
+    .menu__item{
+        @include tablets{
+            margin-right: 0px;
+        }
+    }
 }
+
+
 
 .menu__link{
     @include tablets{
