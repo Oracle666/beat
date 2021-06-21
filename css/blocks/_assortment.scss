@@ -47,6 +47,12 @@
     position: absolute;
     top: 0;
     left: 100%;
+    padding-left: rem(30px);
+    padding-right: rem(25px);
+    padding-top: rem(28px);
+    padding-bottom: rem(35px);
+    width: 273px;
+    background:#FFFFFF;
 }
     
 .assortment__dropdown-element{
@@ -54,7 +60,7 @@
     height: rem(91px);
     background: #9a9a9a;
     border-radius: 4px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -67,57 +73,55 @@
 } 
 .dropdown__hover-item{
     display: flex;
-    flex-direction: column;
-    background:rgba(255, 255, 255, 0.8);
-    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
-    backdrop-filter: blur(40px);
-    border-radius:4px;
-    padding: rem(28px) rem(35px);
-}
-
-.dropdown__hover-element{
-    display: flex;
+    justify-content: space-between;
+    width: 100%;
     margin-top: rem(28px);
     &:first-child{
-        margin-top: 0;
+        margin-top: 0px;
     }
 }
 
-.dropdown__hover-element-decs{
+.dropdown__hover-decs{
     margin-left: rem(16px);
     width: rem(125px);
     display: flex;
+    flex: 1;
     justify-content: space-between;;
 }
 
-.dropdown__hover-element-bluetooth{
+/*.dropdown__hover-bluetooth{
     width: rem(24px);
     height: rem(24px);
     background: url(../../img/sprites2.png) -98px -10px;
 }
 
-.dropdown__hover-element-range{
+.dropdown__hover-range{
     width: rem(24px);
     height: rem(24px);
     background: url(../../img/sprites2.png) -54px -54px;
 }
 
-.dropdown__hover-element-charge{
+.dropdown__hover-charge{
     width: rem(24px);
     height: rem(24px);
     background:url(../../img/sprites2.png) -54px -10px;
 }
 
-.dropdown__hover-element-weight{
+.dropdown__hover-weight{
     width: rem(24px);
     height: rem(24px);
     background:url(../../img/sprites2.png) -10px -10px;
 }
 
-.dropdown__hover-element-guarantee{
+.dropdown__hover-guarantee{
     width: rem(24px);
     height: rem(24px);
     background:url(../../img/sprites2.png) -10px -54px;
+}*/
+
+.icons{
+    width: rem(24px);
+    height: rem(24px);
 }
 
 .assortment__title{
