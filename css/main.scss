@@ -1,7 +1,4 @@
-$containerWidth:940px;
-$baseFontSize:16px;
-$tablets:768px;
-$phones:480px;
+
 @import "./layout/media";
 @import "./layout/normalize.css";
 @import "./layout/base";
@@ -13,6 +10,7 @@ $phones:480px;
 @import "./blocks/_button.scss";
 @import "./blocks/_why.scss";
 @import "./blocks/assortment";
+@import "./blocks/team";
 @import "./blocks/_reviews.scss";
 @import "./blocks/order";
 @import "./blocks/form";
