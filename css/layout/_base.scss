@@ -43,6 +43,7 @@ body{
     font-family: 'playregular', Helvetica, sans-serif;
     line-height: 1.42;
     color: #292929;
+    
 }
 
 .wrapper{
@@ -150,6 +151,20 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.container-modal{
+    width: rem(309px);
+    height: rem(176px);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    background:#FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .container-footer{

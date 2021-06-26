@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width-device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /> 
     <link rel="stylesheet" href="./css/main.css">
     <title>Beats</title>
 </head>
@@ -208,6 +210,82 @@
                                         </div>
                                     </div>
                                 </li>
+                                <li class="assortment__item">
+                                    <div class="assortment__photo">
+                                        <img src="./img/podsred.png" alt="" class="assortment__images">
+                                    </div>
+                                    <div class="assortment__content">
+                                        <div class="assortment__dropdown">
+                                            <div class="assortment__dropdown-element">
+                                                <img src="./img/shesterenka.svg" alt="" class="assortment__dropdown-image">
+                                            </div>
+                                            <ul class="dropdown__hover-list">
+                                                <li class="dropdown__hover-item">
+                                                        <svg class="icons">
+                                                            <use xlink:href="#bluetooth"></use>
+                                                        </svg>
+                                                        <div class="dropdown__hover-decs">
+                                                            <div class="dropdown__hover-title">Bluetooth</div>
+                                                            <div class="dropdown__hover-value">4.0</div>
+                                                        </div>
+                                                </li>
+                                                <li class="dropdown__hover-item">
+                                                        <svg class="icons">
+                                                            <use xlink:href="#range"></use>
+                                                        </svg>
+                                                        <div class="dropdown__hover-decs">
+                                                            <div class="dropdown__hover-title">Дальность</div>
+                                                            <div class="dropdown__hover-value">12 м</div>
+                                                        </div>
+                                                </li>
+                                                <li class="dropdown__hover-item">
+                                                    <svg class="icons">
+                                                        <use xlink:href="#charger"></use>
+                                                    </svg>
+                                                    <div class="dropdown__hover-decs">
+                                                        <div class="dropdown__hover-title">Зарядка</div>
+                                                        <div class="dropdown__hover-value">3 ч</div>
+                                                    </div>
+                                                </li>
+                                                <li class="dropdown__hover-item">
+                                                    <svg class="icons">
+                                                        <use xlink:href="#weight"></use>
+                                                    </svg>
+                                                    <div class="dropdown__hover-decs">
+                                                        <div class="dropdown__hover-title">Вес</div>
+                                                        <div class="dropdown__hover-value">215гр</div>
+                                                    </div>
+                                                </li>
+                                                <li class="dropdown__hover-item">
+                                                    <svg class="icons">
+                                                        <use xlink:href="#garand"></use>
+                                                    </svg>
+                                                    <div class="dropdown__hover-decs">
+                                                        <div class="dropdown__hover-title">Гарантия</div>
+                                                        <div class="dropdown__hover-value">1год</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2 class="assortment__title">beats solo 3. цвет 
+                                            «атласное серебро»</h2>
+                                        <div class="assortment__subtitle">Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</div>
+                                        <ul class="assortment__characteristics-list">
+                                            <li class="assortment__characteristics-item">
+                                                <div class="assortment__characteristics-title">Зарядка</div>
+                                                <div class="assortment__characteristics-value">2 часа</div>
+                                            </li>
+                                            <li class="assortment__characteristics-item">
+                                                <div class="assortment__characteristics-title">Вес</div>
+                                                <div class="assortment__characteristics-value">215 грамм</div>
+                                            </li>
+                                        </ul>
+                                        <div class="assortment__offer">
+                                            <div class="assortment__price">14 990 Р</div>
+                                            <button type="submit" class="button">Заказать</button>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -255,32 +333,50 @@
                 <section class="reviews">
                     <div class="container-reviews">
                         <h2 class="review__title">Отзывы</h2>
-                        <div class="review">
-                            <img src="./img/billi.jpg" alt="" class="review__img">
-                            <div class="review__content">
-                                <h5 class="review__title">Отличный звук</h5>
-                                <div class="review__subtitle">Я ем малыми порциями, но часто. Это повышает мою 
-                                    продуктивность в разы. В течение дня сижу за компьютером и часто отходить 
-                                    в кафе или на кухню просто не могу себе позволить. А батончик – он всегда 
-                                    под рукой. Это приятно и удобно. </div>
-                                <div class="review__name">Билли Айлиш</div>
-                            </div>
-                        </div>
-                        <div class="review__humans">
-                            <ul class="review__list">
-                                <li class="review__item">
-                                    <a href="" class="review__item-link">
-                                        <img src="./img/billi.jpg" alt="" class="review__item-img">
+                        <ul class="review-list">
+                            <li class="review-item reviewactive" data-linked-with="one">
+                                <img src="./img/billi.jpg" alt="" class="review-img">
+                                <div class="review-content">
+                                    <h5 class="review-title">Отличный звук</h5>
+                                    <div class="review-subtitle">Я ем малыми порциями, но часто. Это повышает мою 
+                                        продуктивность в разы. В течение дня сижу за компьютером и часто отходить 
+                                        в кафе или на кухню просто не могу себе позволить. А батончик – он всегда 
+                                        под рукой. Это приятно и удобно. </div>
+                                    <div class="review-name">Билли Айлиш</div>
+                                </div>
+                            </li>
+                            <li class="review-item" data-linked-with="two">
+                                <img src="./img/vadim.jpg" alt="" class="review-img">
+                                <div class="review-content">
+                                    <h5 class="review-title">Крутой дизайн</h5>
+                                    <div class="review-subtitle">После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт. </div>
+                                    <div class="review-name">Вадим Грачев</div>
+                                </div>
+                            </li>
+                            <li class="review-item" data-linked-with="three">
+                                <img src="./img/maria.jpg" alt="" class="review-img">
+                                <div class="review-content">
+                                    <h5 class="review-title">На долго хватает заряда</h5>
+                                    <div class="review-subtitle">Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.</div>
+                                    <div class="review-name">Мария Орлова</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="switcher__humans">
+                            <ul class="switcher__list">
+                                <li class="switcher__item activelink" data-open="one">
+                                    <a href="" class="switcher__item-link">
+                                        <img src="./img/billi.jpg" alt="" class="switcher__item-img">
                                     </a>
                                 </li>
-                                <li class="review__item">
-                                    <a href="" class="review__item-link">
-                                        <img src="./img/vadim.jpg" alt="" class="review__item-img">
+                                <li class="switcher__item" data-open="two">
+                                    <a href="" class="switcher__item-link">
+                                        <img src="./img/vadim.jpg" alt="" class="switcher__item-img">
                                     </a>
                                 </li>
-                                <li class="review__item">
-                                    <a href="" class="review__item-link">
-                                        <img src="./img/maria.jpg" alt="" class="review__item-img">
+                                <li class="switcher__item" data-open="three">
+                                    <a href="" class="switcher__item-link">
+                                        <img src="./img/maria.jpg" alt="" class="switcher__item-img">
                                     </a>
                                 </li>
                             </ul>
@@ -292,15 +388,16 @@
                         <h2 class="order__title">закажите доставку</h2>
                         <div class="order__form">
                             <form action="" class="form">
+                                <input type="hidden" name="to" value="mm@mail.ru">
                                 <div class="form__data">
                                     <div class="form__row">
                                         <label class="form__label form__label--margin">
                                             <div class="form__name-item">Имя</div>
-                                            <input type="text" class="input__name">
+                                            <input type="text" name="name" class="input__name">
                                         </label>
                                         <label class="form__label">
                                             <div class="form__name-item">Телефон</div>
-                                            <input type="tel" placeholder="+7 999 999 99 99" class="input__phone">
+                                            <input type="tel" placeholder="+7 999 999 99 99" name="phone" class="input__phone">
                                         </label>
                                     </div>
                                     <div class="form__row">
@@ -331,7 +428,7 @@
                                 <div class="form__data">
                                     <label class="form__textarea">
                                         <div class="form__name-item">Комментарий</div>
-                                        <textarea name="" id="" cols="30" rows="10" class="form__textarea-item"></textarea>
+                                        <textarea  id="" cols="30" rows="10"  name="comment" class="form__textarea-item"></textarea>
                                     </label>
                                     <div class="form__choice">
                                         <label action="" class="form__choice-item">
@@ -393,7 +490,16 @@
                 </section>
             </main>
         </div>
-        
+    </div>
+    <div id="modal" class="modal">
+        <div class="container-modal">
+            <div class="modal-content">
+                Сообщение отправлено
+            </div>
+            <div class="modal-button__container">
+                <a href="#" class="modal-btn">Закрыть</a>
+            </div>
+        </div>
     </div>
     <div class="slide-menu">
         <ul class="slide-menu__list">
@@ -434,8 +540,12 @@
     <a href="" class="closeButton">
         <img src="./img/closeButton.png" alt="">
     </a>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src = "index.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src ="index.js"></script>
+    <script src ="form.js"></script>
     <svg display="none">
         <symbol id="bluetooth" viewBox="0 0 14 24">
             <path d="M13.2054 17.5212L8.16361 12L13.2054 6.47941C13.3637 6.30555 13.4445 6.0739 13.4276 5.83901C13.4107 5.60388 13.2984 5.38591 13.1163 5.23643L6.98738 0.195911C6.7305 -0.0154485 6.37533 -0.0598392 6.07463 0.0825203C5.77392 0.22427 5.5823 0.526708 5.5823 0.859239V9.1736L2.06391 5.32043C1.74426 4.97018 1.20042 4.94552 0.85017 5.26544C0.499919 5.58537 0.475263 6.12865 0.795185 6.47918L5.5823 11.7217V12.2784L0.795232 17.5212C0.475028 17.8711 0.499685 18.4147 0.850216 18.7349C1.20075 19.0551 1.74408 19.0304 2.06395 18.6796L5.58207 14.827V23.1408C5.58207 23.473 5.77397 23.7757 6.07439 23.9178C6.19125 23.9728 6.31669 24 6.44128 24C6.63689 24 6.83049 23.9336 6.98743 23.8047L13.1163 18.7641C13.2984 18.6143 13.4107 18.3964 13.4276 18.1615C13.4445 17.9267 13.3643 17.695 13.2054 17.5212ZM7.30069 2.67837L11.326 5.98854L7.30069 10.3968V2.67837ZM7.30069 21.3216V13.6035L11.326 18.0115L7.30069 21.3216Z" fill="black"/>

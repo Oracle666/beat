@@ -1,0 +1,18 @@
+.modal{
+    display: none;
+    z-index: 30000;
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #313131;
+    align-items:center;
+    justify-content: center;
+}
+
+.modal-content{
+    margin-bottom: 39px;
+}

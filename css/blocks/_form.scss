@@ -275,3 +275,19 @@ $choiceitemmarginright:rem(16px);
         justify-content: center;
     }
 }
+
+
+input.input-error{
+    border-color: red;
+}
+
+textarea.input-error{
+    border-color: red;
+}
+
+
+
+.error-modal{
+    text-align: center;
+    
+}

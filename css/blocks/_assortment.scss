@@ -1,18 +1,22 @@
 .slide__left{
     position: absolute;
     top: 50%;
-    left: -5%;
+    left: -4%;
+    z-index: 20000;
 }
 
 .slide__right{
     position: absolute;
     top: 50%;
-    right: 0%;
+    right: 2%;
+    z-index: 20000;
 }
 
 .assortment{
     background: #f8faf9;
 }
+
+
 
 .assortment__item{
     display: flex;
@@ -88,36 +92,6 @@
     flex: 1;
     justify-content: space-between;;
 }
-
-/*.dropdown__hover-bluetooth{
-    width: rem(24px);
-    height: rem(24px);
-    background: url(../../img/sprites2.png) -98px -10px;
-}
-
-.dropdown__hover-range{
-    width: rem(24px);
-    height: rem(24px);
-    background: url(../../img/sprites2.png) -54px -54px;
-}
-
-.dropdown__hover-charge{
-    width: rem(24px);
-    height: rem(24px);
-    background:url(../../img/sprites2.png) -54px -10px;
-}
-
-.dropdown__hover-weight{
-    width: rem(24px);
-    height: rem(24px);
-    background:url(../../img/sprites2.png) -10px -10px;
-}
-
-.dropdown__hover-guarantee{
-    width: rem(24px);
-    height: rem(24px);
-    background:url(../../img/sprites2.png) -10px -54px;
-}*/
 
 .icons{
     width: rem(24px);
@@ -214,21 +188,21 @@
 
 .assortment__images{
     @include tablets{
-        max-width: rem(306px);
+        max-width: 306px !important;
     }
 }
 
 .slide__left{
     @include tablets{
-        top: 19%;
-        left: 21%;
+        top: 21%;
+        left: 17%;
     }
 }
 
 .slide__right{
     @include tablets{
-        top: 19%;
-        right: 21%;
+        top: 21%;
+        right: 17%;
     }
 }
 
@@ -249,5 +223,19 @@
 .slide__right{
     @include phones{
         right: 0%;
+    }
+}
+
+
+
+/*Slider*/
+
+.assortment__slider{
+    .bx-wrapper{
+        margin-bottom: 0px;
+        box-shadow: 0 0 0px;
+        border: 0;
+        background: none;
+        
     }
 }

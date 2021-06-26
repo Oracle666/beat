@@ -259,7 +259,7 @@
    */
   
   textarea {
-    overflow: auto;
+    overflow: visible;
   }
   
   /**

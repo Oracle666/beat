@@ -39,25 +39,87 @@
     }
 }
 
-.team-name.triangleup::after{
-    content: "";
-        position: absolute;
-        left: 102%;
-        top: 42%;
-        width: 9px;
-        height: 9px;
-        background: url(../img/triangleup.svg) no-repeat;
-}
-
 .team-desc{
     margin-top: rem(11px);
     overflow: hidden;
-    height: 0;
+    height: 0px;
+}
+
+.active{
+    .team-name::after{
+        background: url(../img/triangleup.svg) no-repeat;
+    }
+    .team-desc{
+        height: 100%;
+    }
 }
 
 
 .team-desc__subtitle{
     color: #666666;
-
 }
 
+
+/*768*/
+
+.team-list{
+    @include tablets{
+        flex-direction: column;
+        align-items:center;
+    }
+}
+
+.team-item{
+    @include tablets{
+        .team-picture{order: 1;}
+        .team-name{order: 0;}
+        .team-desc{order: 2;}
+    }
+}
+
+.team-list .team-item{
+    @include tablets{
+        margin-right: 0px;
+    }
+}
+
+.team-item:first-child{
+    @include tablets{
+        .team-name{
+            margin-top: 0px;
+        }
+    }
+}
+
+.team-name{
+    @include tablets{
+        margin-top: rem(16px);
+    }
+}
+
+.team-desc__title{
+    @include tablets{
+        font-family: playbold;
+    }
+}
+
+.team-picture{
+    @include tablets{
+        display: none;
+    }
+}
+.team-item.active{
+    .team-picture{
+        @include tablets{
+            display: block;
+        }
+    }
+}
+
+
+/*480*/
+.team-desc{
+    @include tablets{
+        width: 124%;
+    }
+}

@@ -23,54 +23,73 @@ closeHref.forEach((closeHref) => {
     })
 })
 
-$(document).ready(() =>{
-    $('.team-name').on('click', function(e){
-        e.preventDefault();
-        const triangle = $(this)
-        const teamdesc = $('.team-desc');
 
-        if(triangle.hasClass('triangleup')){
-            triangle.removeClass('triangleup');
-            teamdesc.css('height', '0%');
-        }
-        else{
-            triangle.addClass('triangleup');
-            teamdesc.css('height', '100%');
-        }
+
+$(document).ready(function(){
+    /*Team*/
+    $('.team-item').on('click', function(e){
+        e.preventDefault();
+        $(this).toggleClass('active').siblings().removeClass('active')
+    })
+    /*review*/
+    const findBlockByAlias = function(alias){
+        return $('.review-item').filter(function(ndx, item){
+            return $(item).attr('data-linked-with') === alias;
+        });
+    };
+
+    $('.switcher__item').on('click', function(e){
+        e.preventDefault();
+        const target = $(e.currentTarget).attr('data-open');
+        const itemToShow = findBlockByAlias(target);
+        const curItem = $(e.currentTarget);
+
+        itemToShow.addClass('reviewactive').siblings().removeClass('reviewactive');
+        curItem.addClass('activelink').siblings().removeClass('activelink');
     });
+    /*slider*/
+    const slider = $('.assortment__list').bxSlider({
+        pager:false,
+        controls:false
+    });
+
+    $('.slide__left').click(function(e){
+        e.preventDefault();
+        slider.goToPrevSlide();
+    })
+    $('.slide__right').click(function(e){
+        e.preventDefault();
+        slider.goToNextSlide();
+    })
     
 })
 
+/*const openItem = function(item){
+        const container = item.closest('.team-item');
+        const contentBlock = container.find('.team-desc');
 
+        container.addClass('active');
+        contentBlock.height('100%');
+    }
 
-    /*$('.team-name').on('click', function(e){
+    const closeEveryItem = function(container){
+        const items = container.find('.team-desc');
+        const itemContainer = container.find('.team-item')
+        itemContainer.removeClass('active');
+        items.height(0);
+    }
+
+    $('.team-name').on('click', function(e) {
         e.preventDefault();
+        const $this = $(e.currentTarget);
+        const container = $this.closest('.team-list');
+        const elemContainer = $this.closest('.team-item');
 
-        const triangle = $('.team-name')
-
-            if(triangle.hasClass('triangleup')){
-                triangle.removeClass('triangleup');
-            }
-            else{
-                triangle.addClass('triangleup');
-            }
-        
-        const teamdesc = $('.team-desc');
-
-        if(teamdesc.hasClass('active')){
-            teamdesc.css('height', '0%');
-            teamdesc.removeClass('active');
-            
+        if(elemContainer.hasClass('active')){
+            closeEveryItem(container);
         }
-        else {
-            teamdesc.css('height', '100%');
-            teamdesc.addClass('active');
+        else{
+            closeEveryItem(container);
+            openItem($this);
         }
-    });*/
-        /*$('.team-name').click(function(e){
-            e.preventDefault();
-            $(this){
-                $('.team-name').css('color', 'blue')
-            }
-        });*/
-
+    })*/
