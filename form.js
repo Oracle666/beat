@@ -43,6 +43,7 @@ $(".form").submit(e => {
 
         request.done((data) => {
             content.text(data.message);
+            e.target.reset();
         });
 
         request.fail((data) => {
