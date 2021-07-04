@@ -47,8 +47,26 @@ body{
 }
 
 .wrapper{
+    position: relative;
     width: 100%;
     overflow: hidden;
+    height: 100%;
+}
+
+.wrapper-content{
+    height: 100%;
+    transition: transform 1s;
+    will-change: transform;
+}
+
+.main-content{
+    height: 100%;
+}
+
+header{
+    position: absolute;
+    width:100%;
+    top: 0%;
 }
 
 section{
@@ -136,6 +154,15 @@ img{
 }
 
 .container-reviews{
+    width: 95%;
+    max-width: $containerWidth;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-player{
     width: 95%;
     max-width: $containerWidth;
     margin: 0 auto;
