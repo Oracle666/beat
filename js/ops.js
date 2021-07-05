@@ -100,15 +100,13 @@ $("[data-scroll-to]").click(e => {
     const $this = $(e.currentTarget);
     const target = $this.attr("data-scroll-to");
     const reqSection = $(`[data-section-id=${target}]`);
-
-    console.log(reqSection.index());
     performTransition(reqSection.index());
 });
 
 
 
 if(isMobile){
-    $("body").swipe( {
+    $("body").swipe({
         //Generic swipe handler for all directions
         swipe:function(event,direction) {
             const scroller = viewportScroller();

@@ -1,7 +1,7 @@
 const openButton = document.querySelector(".hamburger");
-const menu = document.querySelector(".menu");
+const menu = document.querySelector(".modal-menu");
 const closeButton = document.querySelector(".closeButton");
-const closeHref = document.querySelectorAll(".menu__item");
+const closeHref = document.querySelectorAll(".modal-menu__item");
 
 openButton.addEventListener("click", e => {
     e.preventDefault();
@@ -22,3 +22,5 @@ closeHref.forEach((closeHref) => {
         closeButton.style.display = ("none");
     })
 })
+
+

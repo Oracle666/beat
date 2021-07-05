@@ -1,3 +1,6 @@
+.menu--active{
+    display: block;
+}
 .menu__list{
     display: flex;
     flex-wrap: wrap;
@@ -12,49 +15,9 @@
         }
     }
 }
-/*768*/
-.menu{
-    @include tablets{
+
+@include tablets{
+    .menu{
         display: none;
-        background: #313131;
-        color:#FFFFFF;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 100vh;
-        z-index: 10000;
-    }
-}
-
-.menu__list{
-    @include tablets{
-        flex-direction: column;
-        height: 100%;
-        align-items:center;
-        font-size: rem(36px);
-        line-height: rem(72px);
-        justify-content: flex-start;
-        margin-top: rem(135px);
-    }
-    .menu__item{
-        @include tablets{
-            margin-right: 0px;
-        }
-    }
-}
-
-
-
-.menu__link{
-    @include tablets{
-        color: #FFFFFF;
-    }
-}
-/*480*/
-.menu__list{
-    @include phones{
-        margin-top: 0px;
-        justify-content: center;
     }
 }

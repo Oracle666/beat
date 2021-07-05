@@ -126,6 +126,21 @@ img {
           align-items: center;
 }
 
+.modal-container {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1.0625rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
 .container-hello {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,6 +296,10 @@ img {
   }
 }
 
+.menu--active {
+  display: block;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,59 +320,57 @@ img {
   white-space: nowrap;
 }
 
-/*768*/
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
-    background: #313131;
-    color: #FFFFFF;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    z-index: 10000;
   }
+}
+/*768*/
+.modal-menu {
+  display: none;
+  background: #313131;
+  color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 10000;
 }
 
-@media screen and (max-width: 768px) {
-  .menu__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 2.25rem;
-    line-height: 4.5rem;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    margin-top: 8.4375rem;
-  }
+.modal-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.25rem;
+  line-height: 4.5rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 8.4375rem;
 }
-@media screen and (max-width: 768px) {
-  .menu__list .menu__item {
-    margin-right: 0px;
-  }
+.modal-menu__list .modal-menu__item {
+  margin-right: 0px;
 }
 
-@media screen and (max-width: 768px) {
-  .menu__link {
-    color: #FFFFFF;
-  }
+.modal-menu__link {
+  color: #FFFFFF;
 }
 
 /*480*/
-@media screen and (max-width: 480px) {
-  .menu__list {
-    margin-top: 0px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.modal-menu__list {
+  margin-top: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hamburger {
@@ -1212,7 +1229,7 @@ button {
   position: relative;
   color: #ffffff;
   background: url(../img/tynka.jpg) no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .colors-title {
@@ -1270,7 +1287,7 @@ button {
 }
 @media screen and (max-width: 480px) {
   .color-name {
-    width: 90px;
+    width: 70px;
   }
 }
 
@@ -1547,7 +1564,7 @@ button {
   width: 0.625rem;
   height: 1.0625rem;
   margin-left: 1.0625rem;
-  background: url(../../img/start.svg);
+  background: url(../img/start.svg);
 }
 @media screen and (max-width: 768px) {
   .player__start {
@@ -1604,7 +1621,7 @@ button {
 .active-player .player__start {
   width: 12px;
   height: 17px;
-  background: url(../../img/pause-button.svg);
+  background: url(../img/pause-button.svg);
 }
 
 .order {

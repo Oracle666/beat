@@ -81,7 +81,7 @@
     width:rem(10px);
     height: rem(17px);
     margin-left: rem(17px);
-    background: url(../../img/start.svg);
+    background: url(../img/start.svg);
     @include tablets{
         margin-right: 35px;
     }
@@ -128,6 +128,6 @@
     .player__start{
         width: 12px;
         height: 17px;
-        background: url(../../img/pause-button.svg);
+        background: url(../img/pause-button.svg);
     }
 }

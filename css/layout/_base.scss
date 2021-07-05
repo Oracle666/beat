@@ -121,6 +121,15 @@ img{
     align-items: center;
 }
 
+.modal-container{
+    width:95%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(17px);
+    align-items: center;
+    margin:  0 auto;
+}
+
 .container-hello{
     display: flex;
     justify-content: space-between;

@@ -3,7 +3,7 @@
     position: relative;
     color: #ffffff;
     background: url(../img/tynka.jpg) no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .colors-title{
@@ -56,7 +56,7 @@
     justify-content: center;
     color: #FFFFFF;
     @include phones{
-        width:90px;
+        width:70px;
     }
 }
 
