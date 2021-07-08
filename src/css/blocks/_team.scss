@@ -1,0 +1,125 @@
+.team-list{
+    display:flex;
+    .team-item{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        width: rem(220px);
+        margin-right: rem(20px);
+        &:last-child{
+            margin-right: 0px;
+        }
+        .team-desc{
+            text-align: center;
+        }
+    }
+}
+.team-title{
+    font-family: playbold;
+    font-size: rem(48px);
+    line-height: rem(52px);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: rem(53px);
+}
+
+.team-name{
+    margin-top: rem(25px);
+    font-size: rem(18px);
+    font-family: playbold;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 102%;
+        top: 42%;
+        width: 9px;
+        height: 9px;
+        background: url(../img/triangledown.svg) no-repeat;
+    }
+}
+
+.team-desc{
+    margin-top: rem(11px);
+    overflow: hidden;
+    height: 0px;
+}
+
+.active{
+    .team-name::after{
+        background: url(../img/triangleup.svg) no-repeat;
+    }
+    .team-desc{
+        height: 100%;
+    }
+}
+
+
+.team-desc__subtitle{
+    color: #666666;
+}
+
+
+/*768*/
+
+.team-list{
+    @include tablets{
+        flex-direction: column;
+        align-items:center;
+    }
+}
+
+.team-item{
+    @include tablets{
+        .team-picture{order: 1;}
+        .team-name{order: 0;}
+        .team-desc{order: 2;}
+    }
+}
+
+.team-list .team-item{
+    @include tablets{
+        margin-right: 0px;
+    }
+}
+
+.team-item:first-child{
+    @include tablets{
+        .team-name{
+            margin-top: 0px;
+        }
+    }
+}
+
+.team-name{
+    @include tablets{
+        margin-top: rem(16px);
+    }
+}
+
+.team-desc__title{
+    @include tablets{
+        font-family: playbold;
+    }
+}
+
+.team-picture{
+    @include tablets{
+        display: none;
+    }
+}
+.team-item.active{
+    .team-picture{
+        @include tablets{
+            display: block;
+        }
+    }
+}
+
+
+/*480*/
+.team-desc{
+    @include tablets{
+        width: 124%;
+    }
+}

@@ -1,0 +1,115 @@
+.why__hello{
+    width: rem(593px);
+    text-align: center;
+    .why__title{
+        font-family: playbold;
+        font-size: rem(48px);
+        line-height: 1.08;
+        text-transform: uppercase;
+    }
+    .why__subtitle{
+        margin-top: rem(18px);
+        color: #666666;
+    }
+}
+
+.why__desc{
+    margin-top: rem(62px);
+    width: 100%;
+    .why__list{
+        display: flex;
+        justify-content: space-between;
+        .why__item{
+            width: rem(250px);
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            position: relative;
+            &::after{
+                width: rem(67px);
+                height: rem(21px);
+                content: "";
+                background: url(../img/shape.png);
+                opacity: 1;
+                position: absolute;
+                top: 21%;
+                left: 100%;
+                @include tablets{
+                    display: none;
+                }
+            }
+            &:last-child::after{
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+.why__picture{
+    width: rem(128px);
+    height: rem(128px);
+    background: #f2f5f4;
+    border-radius: 50%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.why__item-title{
+    margin-top: rem(24px);
+    color: #292929;
+    font-family: playbold;
+    font-size: rem(24px);
+    text-align:center;
+}
+
+.why__item-subtitle{
+    margin-top: rem(7px);
+    text-align: center;
+    color: #666666;
+}
+
+/*720*/
+.why__hello{
+    @include tablets{
+        width:78%;
+    }
+}
+
+/*480*/
+.why__list{
+    @include phones{
+        flex-direction: column;
+    }
+}
+
+.why__desc .why__list .why__item{
+    @include phones{
+        width:100%;
+        flex-direction:row;
+        margin-bottom: 31px;
+        justify-content: center;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.why__item-desc{
+    @include phones{
+        width:57%;
+        margin-left: 12px;
+        .why__item-title{
+            text-align: left;
+            margin-top: 0;
+        }
+        .why__item-subtitle{
+            text-align: left;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,104 @@
+.hello{
+    background:#f5f5f5;
+    padding-top: rem(94px);
+    padding-bottom: rem(70px);
+    &__content{
+        position: relative;
+    }
+    &__title{
+        font-family: playbold;
+        text-transform: uppercase;
+        font-size: rem(48px);
+        line-height: 1.09;
+        width: rem(400px);
+    }
+    &__subtitle{
+        font-family: alegreyasansregular;
+        width: rem(332px);
+        margin-top: rem(22px);
+        font-size: rem(21px);
+    }
+    &__characteristics{
+        margin-top: rem(88px);
+        display: flex;
+        &-item{
+            display: flex;
+            align-items:flex-start;
+            }
+        &-img{
+            margin-right: rem(11px);
+        }
+        &-desc{
+            width: rem(114px);
+            line-height: 1.1;
+        }
+    }
+    &__headphones{
+        position: absolute;
+        top: -7%;
+        left: 88%;
+    }
+}
+
+/*768*/
+.hello{
+    @include tablets{
+        align-items: flex-start;
+        padding-bottom: 0;
+
+    }
+}
+
+.hello__characteristics{
+    @include tablets{
+        display: none;
+    }
+}
+
+.hello__content{
+    @include tablets{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &::before{
+            content: url(../img/headphones2.png);
+            margin-bottom: 64px;
+        }
+    }
+}
+
+.hello__title{
+    @include tablets{
+        width: 88%;
+    }
+}
+
+.hello__subtitle{
+    @include tablets{
+        width: 53%;
+    }
+}
+
+
+.hello__headphones{
+    @include tablets{
+        display: none;
+    }
+}
+
+/*480*/
+
+.hello__title{
+    @include phones{
+        width:74%;
+        font-size: rem(32px);
+    }
+}
+
+.hello__subtitle{
+    @include phones{
+        width:65%;
+    }
+}

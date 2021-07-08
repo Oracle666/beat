@@ -1,0 +1,293 @@
+$inputheight: rem(58px);
+$formmargintop:rem(11px);
+$inputclickmarginright:rem(10px);
+$choiceitemmarginright:rem(16px);
+
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #FFFFFF;
+    line-height: 1.18;
+    input{
+        border-radius: rem(4px);
+        border: rem(3px) solid transparent;
+        &:focus{
+            outline: none;
+            border-color: #E01F3D ;
+        }
+    }
+    textarea{
+        border-radius: rem(4px);
+        border: rem(3px) solid transparent;
+        &:focus{
+            outline: none;
+            border-color: #E01F3D ;
+        }
+    }
+    &__data{
+        width: rem(461px);
+        margin:0 4.5px;
+        .form__textarea{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            flex: 1;
+            &-item{
+                height: rem(152px);
+            }
+        }
+    }
+}
+
+.form__row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(13px);
+    &:last-child{
+        margin-bottom: rem(0px);
+    }
+}
+
+.input{
+    &__name{
+        width: rem(222px);
+        height: rem(58px);
+    }
+    &__phone{
+        width: rem(222px);
+        height: rem(58px);
+    }
+    &__address-street{
+        width: rem(461px);
+        height: rem(58px);
+    }
+    &__address-housedata-item{
+        width: rem(105px);
+        height: rem(58px);
+    }
+}
+
+.form__choice{
+    margin-top: rem(38px);
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+    &-item{
+        display: flex;
+        align-items: center;
+        margin-right: $choiceitemmarginright;
+        &:last-child{
+            margin-right: rem(0px);
+        }
+        &:nth-child(3){
+            margin-top: rem(19px);
+        }
+        .input__choice-item{
+            width: rem(25px);
+            height: rem(25px);
+            border-radius: 50%;
+            margin-right: $inputclickmarginright;
+            display: none;
+            &:checked + .fake__radio::before{
+                opacity: 1;
+            }
+        }
+        .input__choice-item-checkbox{
+            width: rem(25px);
+            height: rem(25px);
+            margin-right: $inputclickmarginright;
+            display: none;
+            &:checked + .fake__checkbox::before{
+                opacity: 1;
+            } 
+        }
+
+        .fake__radio{
+            width: rem(24px);
+            height: rem(24px);
+            background: #FFFFFF;
+            border-radius: 50%;
+            margin-right: $inputclickmarginright;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                width: rem(12px);
+                height: rem(12px);
+                border-radius: 50%;
+                background: #E01F3D;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+            }
+        }
+        .fake__checkbox{
+            width: rem(24px);
+            height: rem(24px);
+            border-radius:rem(4px);
+            background: #FFFFFF;
+            margin-right: $inputclickmarginright;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                width: rem(12px);
+                height: rem(12px);
+                border-radius: 50%;
+                background: url(../img/vector.png) no-repeat center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+            }
+        }
+
+    }
+
+}
+
+.form__buttons{
+    margin-top: rem(46px);
+}
+
+.form{
+    @include tablets{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*768*/
+.input{
+    &__name{
+        @include tablets{
+            height:rem(36px);
+        }
+    }
+    &__phone{
+        @include tablets{
+            height:rem(36px);
+        }
+    }
+    &__address-street{
+        @include tablets{
+            height:rem(36px);
+        }
+    }
+    &__address-housedata-item{
+        @include tablets{
+            height:rem(36px);
+        }
+    }
+}
+
+.form__textarea-item{
+    @include tablets{
+        height: rem(82px) !important;
+    }
+}
+
+.form__data{
+    @include tablets{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+.form__data:nth-child(2){
+    @include tablets{
+        margin-top: rem(16px);
+    }
+}
+/*480*/
+.form__choice{
+    @include phones{
+        justify-content: center;
+        width: 98%;
+    }
+}
+
+.form__row{
+    @include phones{
+        justify-content: space-between;
+    }
+}
+
+.form__data{
+    @include phones{
+        width:100%;
+        flex-wrap: nowrap;
+    }
+}
+
+
+
+.form__label{
+    @include phones{
+        width: 100%;
+    }
+}
+
+.form__label--margin{
+    @include phones{
+        margin-right: rem(18px);
+    }
+}
+
+.input__name{
+    @include phones{
+        width: 100%;
+    }
+}
+.input__phone{
+    @include phones{
+        width:100%
+    }
+}
+
+.input__address-street{
+    @include phones{
+        width: 100%;
+    }
+}
+
+.form__address-housedata-item{
+    @include phones{
+        margin-right: rem(12px);
+        &:last-child{
+            margin-right: rem(0px);
+        }
+    }
+}
+
+.input__address-housedata-item{
+    @include phones{
+        width: 100%;
+    }
+}
+
+.form__buttons{
+    @include phones{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+input.input-error{
+    border-color: red;
+}
+
+textarea.input-error{
+    border-color: red;
+}
+
+
+
+.error-modal{
+    text-align: center;
+    
+}

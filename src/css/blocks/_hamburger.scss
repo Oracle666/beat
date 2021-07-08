@@ -1,0 +1,36 @@
+.hamburger{
+    width: 26px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    position: fixed;
+    top: 2.5%;
+    right: 3%;
+    @include tablets{
+        display: inline-flex;
+    }
+}
+
+.hamburger__plank{
+    display: block;
+    background:#292929;
+    width: 26px;    
+    height: 4px;
+    border-radius: 10px;
+}
+
+.closeButton{
+    display: none;
+}
+
+/*768*/
+
+.closeButton{
+    @include tablets{
+        top: 2.5%;
+        right: 3%;
+        position: fixed;
+        z-index: 10000;
+    }
+}

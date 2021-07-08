@@ -1,0 +1,112 @@
+.footer{
+    padding-bottom: rem(20px);
+    padding-top: rem(20px);
+    width: 100%;
+}
+
+.footer__address{
+    font-family: playregular;
+    font-style: normal;
+    font-size: rem(18px);
+}
+
+.phone-svg{
+    fill: #292929;
+}
+
+.contact__img-red{
+    filter: red;
+}
+
+.social__list{
+    display: flex;
+}
+
+.social__item{
+    width: 30px;
+    height: 30px;
+    margin-right: rem(10px);
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+
+.social__link-vk{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url(../img/sprites.png) -60px -10px;
+}
+
+.social__link-facebook{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url(../img/sprites.png) -60px -60px;
+}
+
+.social__link-instagram{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url(../img/sprites.png) -10px -10px;
+}
+
+.social__link-telegram{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url(../img/sprites.png) -10px -60px;
+}
+
+
+/*768*/
+.phone-svg{
+    @include tablets{
+        fill:#E01F3D;
+    }
+}
+
+.contact__phone--footer{
+    font-style:normal;
+    @include tablets{
+        color: #E01F3D;
+    }
+}
+
+
+/*480*/
+
+.phone-svg{
+    @include phones{
+        fill:#292929;
+    }
+}
+
+.contact__phone--footer{
+    font-style:normal;
+    @include phones{
+        color: #292929;
+    }
+}
+
+.container-footer{
+    @include phones{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
+.contact{
+    @include phones{
+        justify-content: center;
+        margin-top: rem(12px);
+    }
+}
+
+.social{
+    @include phones{
+        margin-top: rem(18px);
+    }
+}

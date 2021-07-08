@@ -1,0 +1,37 @@
+/*768*/
+.modal-menu{
+        display: none;
+        background: #313131;
+        color:#FFFFFF;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        z-index: 10000;
+}
+
+.modal-menu__list{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items:center;
+        font-size: rem(36px);
+        line-height: rem(72px);
+        justify-content: flex-start;
+        margin-top: rem(135px);
+    .modal-menu__item{
+            margin-right: 0px;
+    }
+}
+
+
+
+.modal-menu__link{
+        color: #FFFFFF;
+}
+/*480*/
+.modal-menu__list{
+        margin-top: 0px;
+        justify-content: center;
+}

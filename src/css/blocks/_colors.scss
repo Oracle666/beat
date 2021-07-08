@@ -1,0 +1,81 @@
+.colors{
+    display: block;
+    position: relative;
+    color: #ffffff;
+    background: url(../img/tynka.jpg) no-repeat;
+    background-size: cover;
+}
+
+.colors-title{
+    display: inline-block;
+    position: absolute;
+    left: 9.5%;
+    top: 18%;
+    font-family: playbold;
+    font-size: rem(48px);
+    text-transform: uppercase;
+}
+
+.colors-list{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+
+.color-item{
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.color-item:nth-child(1){
+    .color-name{
+        background: #999999;
+    }
+}
+
+.color-item:nth-child(2){
+    .color-name{
+        background: #151515;
+    }
+}
+
+.color-item:nth-child(3){
+    .color-name{
+        background: #E01F3C;
+    }
+}
+
+.color-name{
+    width:102px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    color: #FFFFFF;
+    @include phones{
+        width:70px;
+    }
+}
+
+.color-name__text{
+    margin-bottom: rem(34px);
+    font-size: rem(36px);
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+}
+
+.color-desc{
+    transition: width 0.3s;
+    width: 0px;
+    background: rgba(51, 53, 55, 0.9);
+}
+
+.color-desc__text{
+    padding: rem(31px) rem(53px) rem(31px) rem(38px);
+}
+
+
+

@@ -1,0 +1,23 @@
+.menu--active{
+    display: block;
+}
+.menu__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .menu__item{
+        margin-right: rem(27px);
+        &:last-child{
+            margin-right: rem(0px);
+        }
+        .menu__link{
+            white-space: nowrap;
+        }
+    }
+}
+
+@include tablets{
+    .menu{
+        display: none;
+    }
+}
