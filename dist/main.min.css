@@ -284,7 +284,7 @@ textarea {
 [type=search] {
   -webkit-appearance: textfield;
   /* 1 */
-  outline-offset: -0.0625rem;
+  outline-offset: -2px;
   /* 2 */
 }
 
@@ -355,16 +355,16 @@ template {
   src: url(../fonts/alegreyasansregular.ttf);
 }
 html {
-  font-size: 0.5rem;
+  font-size: 16px;
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 0.46875rem;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 0.4375rem;
+    font-size: 14px;
   }
 }
 
@@ -443,7 +443,7 @@ img {
 
 .container-header {
   width: 95%;
-  max-width: 29.375rem;
+  max-width: 940px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -464,14 +464,14 @@ img {
   display: flex;
   justify-content: space-between;
   width: 95%;
-  max-width: 29.375rem;
+  max-width: 940px;
   margin: 0 auto;
 }
 
 .container-why {
   margin: 0 auto;
   width: 95%;
-  max-width: 29.375rem;
+  max-width: 940px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -481,20 +481,20 @@ img {
 
 .container-assortment {
   width: 95%;
-  max-width: 29.375rem;
+  max-width: 940px;
   margin: 0 auto;
   position: relative;
 }
 
 .container-team {
   width: 95%;
-  max-width: 29.375rem;
+  max-width: 940px;
   margin: 0 auto;
 }
 
 .container-reviews {
   width: 95%;
-  max-width: 29.375rem;
+  max-width: 940px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -503,7 +503,7 @@ img {
 
 .container-player {
   width: 95%;
-  max-width: 29.375rem;
+  max-width: 940px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -512,7 +512,7 @@ img {
 
 .container-order {
   width: 95%;
-  max-width: 29.375rem;
+  max-width: 940px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -537,7 +537,7 @@ img {
   width: 95%;
   display: flex;
   justify-content: space-between;
-  max-width: 29.375rem;
+  max-width: 940px;
   margin: 0 auto;
   align-items: center;
 }
@@ -611,7 +611,7 @@ img {
   margin-top: 8.4375rem;
 }
 .modal-menu__list .modal-menu__item {
-  margin-right: 0rem;
+  margin-right: 0px;
 }
 
 .modal-menu__link {
@@ -620,13 +620,13 @@ img {
 
 /*480*/
 .modal-menu__list {
-  margin-top: 0rem;
+  margin-top: 0px;
   justify-content: center;
 }
 
 .hamburger {
-  width: 0.8125rem;
-  height: 0.75rem;
+  width: 26px;
+  height: 24px;
   flex-direction: column;
   justify-content: space-between;
   display: none;
@@ -643,9 +643,9 @@ img {
 .hamburger__plank {
   display: block;
   background: #292929;
-  width: 0.8125rem;
-  height: 0.125rem;
-  border-radius: 0.3125rem;
+  width: 26px;
+  height: 4px;
+  border-radius: 10px;
 }
 
 .closeButton {
@@ -728,7 +728,7 @@ img {
   }
   .hello__content::before {
     content: url(../img/headphones2.png);
-    margin-bottom: 2rem;
+    margin-bottom: 64px;
   }
 }
 
@@ -986,7 +986,7 @@ button {
   .why__desc .why__list .why__item {
     width: 100%;
     flex-direction: row;
-    margin-bottom: 0.96875rem;
+    margin-bottom: 31px;
     justify-content: center;
   }
   .why__desc .why__list .why__item:last-child {
@@ -997,7 +997,7 @@ button {
 @media screen and (max-width: 480px) {
   .why__item-desc {
     width: 57%;
-    margin-left: 0.375rem;
+    margin-left: 12px;
   }
   .why__item-desc .why__item-title {
     text-align: left;
@@ -1063,7 +1063,7 @@ button {
   padding-right: 1.5625rem;
   padding-top: 1.75rem;
   padding-bottom: 2.1875rem;
-  width: 8.53125rem;
+  width: 273px;
   background: #FFFFFF;
 }
 
@@ -1071,7 +1071,7 @@ button {
   width: 5.6875rem;
   height: 5.6875rem;
   background: #9a9a9a;
-  border-radius: 0.125rem;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1089,7 +1089,7 @@ button {
   margin-top: 1.75rem;
 }
 .dropdown__hover-item:first-child {
-  margin-top: 0rem;
+  margin-top: 0px;
 }
 
 .dropdown__hover-decs {
@@ -1181,19 +1181,19 @@ button {
 @media screen and (max-width: 768px) {
   .assortment__title {
     font-size: 1.75rem;
-    margin-top: 0rem;
+    margin-top: 0px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .assortment__price {
-    margin-right: 0.625rem;
+    margin-right: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .assortment__images {
-    max-width: 9.5625rem !important;
+    max-width: 306px !important;
   }
 }
 
@@ -1232,8 +1232,8 @@ button {
 
 /*Slider*/
 .assortment__slider .bx-wrapper {
-  margin-bottom: 0rem;
-  box-shadow: 0 0 0rem;
+  margin-bottom: 0px;
+  box-shadow: 0 0 0px;
   border: 0;
   background: none;
 }
@@ -1249,7 +1249,7 @@ button {
   margin-right: 1.25rem;
 }
 .team-list .team-item:last-child {
-  margin-right: 0rem;
+  margin-right: 0px;
 }
 .team-list .team-item .team-desc {
   text-align: center;
@@ -1275,15 +1275,15 @@ button {
   position: absolute;
   left: 102%;
   top: 42%;
-  width: 0.28125rem;
-  height: 0.28125rem;
+  width: 9px;
+  height: 9px;
   background: url(../img/triangledown.svg) no-repeat;
 }
 
 .team-desc {
   margin-top: 0.6875rem;
   overflow: hidden;
-  height: 0rem;
+  height: 0px;
 }
 
 .active .team-name::after {
@@ -1319,13 +1319,13 @@ button {
 
 @media screen and (max-width: 768px) {
   .team-list .team-item {
-    margin-right: 0rem;
+    margin-right: 0px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .team-item:first-child .team-name {
-    margin-top: 0rem;
+    margin-top: 0px;
   }
 }
 
@@ -1405,7 +1405,7 @@ button {
 }
 
 .color-name {
-  width: 3.1875rem;
+  width: 102px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -1413,7 +1413,7 @@ button {
 }
 @media screen and (max-width: 480px) {
   .color-name {
-    width: 2.1875rem;
+    width: 70px;
   }
 }
 
@@ -1426,7 +1426,7 @@ button {
 
 .color-desc {
   transition: width 0.3s;
-  width: 0rem;
+  width: 0px;
   background: rgba(51, 53, 55, 0.9);
 }
 
@@ -1455,7 +1455,7 @@ button {
 .review-item {
   display: flex;
   overflow: hidden;
-  height: 0rem;
+  height: 0px;
 }
 
 .reviewactive {
@@ -1507,8 +1507,8 @@ button {
 }
 
 .activelink .switcher__item-link {
-  box-shadow: 0rem 0rem 0rem 0.1875rem #f00;
-  border-radius: 3.125rem;
+  box-shadow: 0px 0px 0px 6px #f00;
+  border-radius: 100px;
 }
 
 /*768*/
@@ -1559,16 +1559,16 @@ button {
 .player-section__container {
   margin: 0 auto;
   width: 71%;
-  max-width: 20.6875rem;
+  max-width: 662px;
 }
 @media screen and (max-width: 768px) {
   .player-section__container {
-    max-width: 18.5625rem;
+    max-width: 594px;
   }
 }
 @media screen and (max-width: 480px) {
   .player-section__container {
-    max-width: 12.3125rem;
+    max-width: 394px;
   }
 }
 
@@ -1594,12 +1594,12 @@ button {
 }
 @media screen and (max-width: 768px) {
   .player {
-    height: 10.96875rem;
+    height: 351px;
   }
 }
 @media screen and (max-width: 480px) {
   .player {
-    height: 7.28125rem;
+    height: 233px;
   }
 }
 
@@ -1610,12 +1610,12 @@ button {
 
 @media screen and (max-width: 768px) {
   .player__elem {
-    height: 10.96875rem;
+    height: 351px;
   }
 }
 @media screen and (max-width: 480px) {
   .player__elem {
-    height: 7.28125rem;
+    height: 233px;
   }
 }
 
@@ -1639,7 +1639,7 @@ button {
 }
 
 .player__controls {
-  height: 1.0625rem;
+  height: 34px;
   display: flex;
   background: #151515;
   color: #FFFFFF;
@@ -1658,12 +1658,12 @@ button {
 }
 @media screen and (max-width: 768px) {
   .player__start {
-    margin-right: 1.09375rem;
+    margin-right: 35px;
   }
 }
 @media screen and (max-width: 480px) {
   .player__start {
-    height: 0.53125rem;
+    height: 17px;
   }
 }
 
@@ -1681,8 +1681,8 @@ button {
 }
 .player__playback .player__playback-button {
   background: red;
-  width: 0.4375rem;
-  height: 0.4375rem;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   position: absolute;
   top: -150%;
@@ -1699,7 +1699,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .player__duration {
-    margin-left: 1.09375rem;
+    margin-left: 35px;
   }
 }
 
@@ -1707,8 +1707,8 @@ button {
   height: 0;
 }
 .active-player .player__start {
-  width: 0.375rem;
-  height: 0.53125rem;
+  width: 12px;
+  height: 17px;
   background: url(../img/pause-button.svg);
 }
 
@@ -1748,19 +1748,19 @@ input[type=range]:focus {
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-  height: 0.1875rem;
+  height: 6px;
   cursor: pointer;
   background: #E01F3D;
 }
 
 input[type=range]::-webkit-slider-thumb {
-  height: 0.46875rem;
-  width: 0.46875rem;
-  border-radius: 0.46875rem;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
   background: #E01F3D;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -0.15625rem;
+  margin-top: -5px;
 }
 
 .order {
@@ -1797,7 +1797,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .modal-content {
-  margin-bottom: 1.21875rem;
+  margin-bottom: 39px;
 }
 
 .form {
@@ -1825,7 +1825,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 .form__data {
   width: 28.8125rem;
-  margin: 0 0.125rem;
+  margin: 0 4.5px;
 }
 .form__data .form__textarea {
   display: flex;
@@ -1982,8 +1982,8 @@ input[type=range]::-webkit-slider-thumb {
 
 @media screen and (max-width: 768px) {
   .form__data {
-    margin-right: 0rem;
-    margin-left: 0rem;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 
@@ -2114,40 +2114,40 @@ textarea.input-error {
 }
 
 .social__item {
-  width: 0.9375rem;
-  height: 0.9375rem;
+  width: 30px;
+  height: 30px;
   margin-right: 0.625rem;
 }
 .social__item:last-child {
-  margin-right: 0rem;
+  margin-right: 0px;
 }
 
 .social__link-vk {
   display: block;
   width: 100%;
   height: 100%;
-  background: url(../img/sprites.png) -1.875rem -0.3125rem;
+  background: url(../img/sprites.png) -60px -10px;
 }
 
 .social__link-facebook {
   display: block;
   width: 100%;
   height: 100%;
-  background: url(../img/sprites.png) -1.875rem -1.875rem;
+  background: url(../img/sprites.png) -60px -60px;
 }
 
 .social__link-instagram {
   display: block;
   width: 100%;
   height: 100%;
-  background: url(../img/sprites.png) -0.3125rem -0.3125rem;
+  background: url(../img/sprites.png) -10px -10px;
 }
 
 .social__link-telegram {
   display: block;
   width: 100%;
   height: 100%;
-  background: url(../img/sprites.png) -0.3125rem -1.875rem;
+  background: url(../img/sprites.png) -10px -60px;
 }
 
 /*768*/
